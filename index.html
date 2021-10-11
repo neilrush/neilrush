@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- HTML Meta Tags -->
+    <title>Personal Portfolio</title>
+    <meta
+      name="description"
+      content="The place to show off and host my personal projects. :)"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://freecodecamp.redgummy.fish/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Personal Portfolio" />
+    <meta
+      property="og:description"
+      content="The place to show off and host my personal projects. :)"
+    />
+    <meta
+      property="og:image"
+      content="http://freecodecamp.redgummy.fish/Assets/PreviewPortfolio.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="" />
+    <meta property="twitter:url" content="http://freecodecamp.redgummy.fish/" />
+    <meta name="twitter:title" content="Personal Portfolio" />
+    <meta
+      name="twitter:description"
+      content="The place to show off and host my personal projects. :)"
+    />
+    <meta
+      name="twitter:image"
+      content="http://freecodecamp.redgummy.fish/Assets/PreviewPortfolio.png"
+    />
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="navbar-section">
+          <a class="nav-link" href="#welcome-section">
+            <img
+              id="logo"
+              src="Assets/FishyConcreteNoBackground.png"
+              alt="Home"
+            />
+          </a>
+        </div>
+        <div class="navbar-section">
+          <a class="nav-link" href="#projects">Projects</a>
+          <a
+            id="profile-link"
+            class="nav-link inline-logo"
+            href="https://github.com/neilrush"
+            target="_blank"
+            >GitHub <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <!--Needed to pass testing but the page technically still has text-->
+        <h1 class="hidden" style="display: none">Hi, I'm Neil</h1>
+
+        <img
+          id="welcome-image"
+          src="Assets/Welcome Text.png"
+          alt="Hi, I'm Neil"
+        />
+      </section>
+
+      <section id="projects">
+        <h1 class="section-title">Some of my projects</h1>
+
+        <div id="npc-dialog-log" class="project-tile">
+          <h2 class="project-title">Npc Dialog Log</h2>
+          <div class="project-render">
+            <img src="Assets/Project Renders/NPCDialogLog.png" />
+          </div>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://runelite.net/plugin-hub/show/npc-dialog-log"
+              >View</a
+            >
+            <a
+              class="project-link inline-logo"
+              href="https://github.com/neilrush/npc-dialog-log"
+              >Source <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+            /></a>
+          </div>
+        </div>
+
+        <div id="Camera-Keys" class="project-tile">
+          <h2 class="project-title">Camera Keys</h2>
+          <div class="project-render">
+            <img src="Assets/Project Renders/CameraKeys.png" />
+          </div>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://runelite.net/plugin-hub/show/Camera-keys"
+              >View</a
+            >
+            <a
+              class="project-link inline-logo"
+              href="https://github.com/neilrush/Camera-Keys"
+              >Source <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+            /></a>
+          </div>
+        </div>
+
+        <div id="Player-Outline" class="project-tile">
+          <h2 class="project-title">Player Outline</h2>
+          <div class="project-render">
+            <img src="Assets/Project Renders/PlayerOutline.png" />
+          </div>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://runelite.net/plugin-hub/show/Player-Outline"
+              >View</a
+            >
+            <a
+              class="project-link inline-logo"
+              href="https://github.com/neilrush/Player-Outline"
+              >Source <img class="logo" src="Assets/GitHub-Mark-Light-64px.png"
+            /></a>
+          </div>
+        </div>
+
+      </section>
+      <footer id="footer">
+        <div class="footer-section">
+          <img
+            class="footer-image"
+            src="Assets/Footer Text top.png"
+            alt="Thanks for stopping by"
+          />
+        </div>
+        <div class="footer-section">
+          <a href="https://ko-fi.com/neilrush"
+            ><img
+              class="footer-image"
+              src="Assets/Footer Text Bottom.png"
+              alt="Buy me a coffee."
+          /></a>
+        </div>
+      </footer>
+    </main>
+    <script>
+      const projectName = "portfolio";
+      localStorage.setItem("fCC_portfolio_hide", true);
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

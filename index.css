@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  --navbar-height: 50px;
+  --text-color: aliceblue;
+  --background-color-1: rgb(96, 107, 211);
+  --background-color-2: rgb(61, 62, 73);
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  font-size: 1rem;
+  background-color: var(--background-color-1);
+  min-width: 280px;
+  scrollbar-color: dark;
+}
+
+#navbar {
+  padding: 0 30px;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color-2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  height: var(--navbar-height);
+  z-index: 100;
+}
+
+.navbar-section {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  height: var(--navbar-height);
+  z-index: 100;
+}
+
+@media (max-width: 330px) {
+  #navbar {
+    padding: 0 5px;
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  color: aliceblue;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+@media (hover: hover) {
+  .nav-link:hover {
+    background-color: rgb(46, 47, 54);
+  }
+}
+.nav-link:active {
+  background-color: rgb(84, 86, 100);
+  transition: none;
+}
+
+#logo {
+  height: 100%;
+  align-self: center;
+  min-height: 0;
+}
+
+.inline-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inline-logo .logo {
+  padding-left: 4px;
+  max-height: 16px;
+  align-self: center;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color-2);
+}
+
+#welcome-image {
+  max-width: 100%;
+  transform: scale(0.5);
+}
+
+.section-title {
+  font-size: 2.1875rem;
+  width: 100%;
+  padding: 60px 0rem 3.125rem 0;
+  margin: 0 auto 0 auto;
+}
+
+#projects {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.project-tile {
+  margin: 1.25rem;
+  background-color: var(--background-color-2);
+  border-radius: 10px;
+  width: 34.375rem;
+  box-shadow: 3px 3px 7px black ;
+}
+
+@media (max-width: 75em) {
+  .project-tile {
+    width: 26.5625rem;
+  }
+}
+
+.project-tile .project-render {
+  padding: 0 2.5rem 0.625rem 2.5rem;
+  width: 100%;
+}
+
+.project-tile .project-render img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: .8rem;
+  padding-bottom: 1.25rem;
+}
+
+.project-link {
+  margin: 0 0.625rem;
+  padding: 0.3125rem;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--background-color-1);
+  border-radius: 5px;
+  width: 7.8125rem;
+  transition: background-color 0.2s;
+}
+
+@media (hover: hover) {
+  .project-link:hover {
+    background-color: rgb(89, 98, 177);
+  }
+}
+
+.project-link:active {
+  background-color: rgb(110, 124, 243);
+  transition: none;
+}
+
+#footer {
+  min-width: none;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: var(--background-color-2);
+}
+
+.footer-section {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  max-height: 100%;
+}
+
+#footer a {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.footer-image {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1.25rem;
+}
+
+@media (max-width: 37.5em) {
+  #footer {
+    flex-direction: column;
+    height: 150px;
+  }
+  .footer-section {
+    max-height: none;
+  }
+}
+
+@media (max-width: 34.375em) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-aspect-ratio: 4/3) and (max-height: 62.5rem) {
+  html {
+    font-size: 0.8rem;
+  }
+  .project-tile {
+    width: 300px;
+  }
+  
+}
